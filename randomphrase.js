@@ -1,5 +1,5 @@
 function readFile(file) {
-    var reader = XMLHttpRequest();
+    var reader = new XMLHttpRequest();
     reader.open('get', file, false);
     reader.onreadystatechange = function() {
         if (reader.readerstate == 4) return reader.responseText;
